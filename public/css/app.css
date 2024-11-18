@@ -17,7 +17,6 @@ input{
     height: 35px;
     width: 300px;
     border: solid 1px blue;
-    border-radius: 20px;
 }
 button{
     width: 300px;
@@ -25,7 +24,6 @@ button{
     margin: 5px;
     background-color: orange;
     border: solid 1px ;
-    border-radius: 20px;
 }
 button:hover{
     color: white;

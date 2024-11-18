@@ -7,12 +7,13 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="" method="">
-        <input type="text" placeholder="Nome do Produto">
-        <input type="text" placeholder="Categoria">
-        <input type="text" placeholder="Preço">
-        <input type="text" placeholder="Estoque">
-        <button>Cadastrar</button>
+    <form action="{{('produto.store')}}" method="POST">
+        @csrf
+        <input type="text" name="nome" placeholder="Nome do Produto" required>
+        <input type="text" name="categoria" placeholder="Categoria" required>
+        <input type="text" name="preço" placeholder="Preço" required>
+        <input type="text" name="estoque" placeholder="Estoque" required>
+        <button type="submit">Cadastrar</button>
     </form>
 </body>
 </html>
